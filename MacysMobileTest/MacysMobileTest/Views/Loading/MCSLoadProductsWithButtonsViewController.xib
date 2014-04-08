@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MCSLoadProductsWithButtonsViewController">
+            <connections>
+                <outlet property="buttonCreateAllProducts" destination="u6B-VY-XlT" id="e1b-b4-vqC"/>
+                <outlet property="buttonCreateProduct1" destination="Xdr-Ca-hJJ" id="nCp-Rq-aKA"/>
+                <outlet property="buttonCreateProduct2" destination="h4T-4E-Q6I" id="GcS-En-Emz"/>
+                <outlet property="buttonCreateProduct3" destination="CT3-tB-qj3" id="7r6-FZ-c0h"/>
+                <outlet property="buttonDeleteAllProducts" destination="9A6-eg-uL8" id="jf6-1A-vfR"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdr-Ca-hJJ">
+                    <rect key="frame" x="20" y="65" width="280" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="z55-eA-xAC"/>
+                    </constraints>
+                    <state key="normal" title="Load Item 1">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="productButton1Touched:" destination="-1" eventType="touchUpInside" id="YR0-ay-zLd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4T-4E-Q6I">
+                    <rect key="frame" x="20" y="143" width="280" height="71"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="71" id="IA1-0M-TMb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Load Item 2">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="productButton2Touched:" destination="-1" eventType="touchUpInside" id="cMg-5a-Efc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CT3-tB-qj3">
+                    <rect key="frame" x="20" y="222" width="280" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="P5k-sX-LEG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Load Item 3">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="productButton3Touched:" destination="-1" eventType="touchUpInside" id="gOL-PC-SR2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6B-VY-XlT">
+                    <rect key="frame" x="20" y="300" width="280" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="MqZ-0C-V7H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Load All Items">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="productButton3Touched:" destination="-1" eventType="touchUpInside" id="I1K-Jf-7Wm"/>
+                        <action selector="productButtonCreateAllTouched:" destination="-1" eventType="touchUpInside" id="0Qi-Mu-pX7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9A6-eg-uL8">
+                    <rect key="frame" x="20" y="378" width="280" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="13x-pb-Xot"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Unload All Items">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="productButton3Touched:" destination="-1" eventType="touchUpInside" id="BOR-61-C1z"/>
+                        <action selector="productButtonDeleteAllTouched:" destination="-1" eventType="touchUpInside" id="6tM-jS-oDT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="u6B-VY-XlT" firstAttribute="trailing" secondItem="9A6-eg-uL8" secondAttribute="trailing" id="2By-7f-GTW"/>
+                <constraint firstItem="Xdr-Ca-hJJ" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="2DT-Zh-Vj4"/>
+                <constraint firstItem="Xdr-Ca-hJJ" firstAttribute="top" secondItem="1" secondAttribute="top" constant="65" id="2qA-uh-Thz"/>
+                <constraint firstItem="u6B-VY-XlT" firstAttribute="leading" secondItem="CT3-tB-qj3" secondAttribute="leading" id="4mc-yE-b9Y"/>
+                <constraint firstItem="h4T-4E-Q6I" firstAttribute="top" secondItem="Xdr-Ca-hJJ" secondAttribute="bottom" constant="8" symbolic="YES" id="6pS-qm-ew2"/>
+                <constraint firstItem="h4T-4E-Q6I" firstAttribute="leading" secondItem="CT3-tB-qj3" secondAttribute="leading" id="8Pc-Ng-OzH"/>
+                <constraint firstAttribute="trailing" secondItem="Xdr-Ca-hJJ" secondAttribute="trailing" constant="20" symbolic="YES" id="9qm-Pf-xC5"/>
+                <constraint firstItem="h4T-4E-Q6I" firstAttribute="leading" secondItem="Xdr-Ca-hJJ" secondAttribute="leading" id="GeF-8D-Her"/>
+                <constraint firstItem="9A6-eg-uL8" firstAttribute="top" secondItem="u6B-VY-XlT" secondAttribute="bottom" constant="8" symbolic="YES" id="Rsg-4D-tcb"/>
+                <constraint firstItem="CT3-tB-qj3" firstAttribute="top" secondItem="h4T-4E-Q6I" secondAttribute="bottom" constant="8" symbolic="YES" id="WoY-zJ-YZj"/>
+                <constraint firstItem="u6B-VY-XlT" firstAttribute="top" secondItem="CT3-tB-qj3" secondAttribute="bottom" constant="8" symbolic="YES" id="gTl-Ip-r3f"/>
+                <constraint firstItem="u6B-VY-XlT" firstAttribute="leading" secondItem="9A6-eg-uL8" secondAttribute="leading" id="maY-Ze-BAe"/>
+                <constraint firstItem="u6B-VY-XlT" firstAttribute="trailing" secondItem="CT3-tB-qj3" secondAttribute="trailing" id="p6c-0n-Lq7"/>
+                <constraint firstItem="h4T-4E-Q6I" firstAttribute="trailing" secondItem="CT3-tB-qj3" secondAttribute="trailing" id="wcX-KT-1og"/>
+                <constraint firstItem="Xdr-Ca-hJJ" firstAttribute="trailing" secondItem="h4T-4E-Q6I" secondAttribute="trailing" id="xog-NB-YBE"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

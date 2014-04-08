@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MCSPathSelectionViewController">
+            <connections>
+                <outlet property="buttonCreateProducts" destination="J4J-Zp-Frx" id="BUL-d3-x9g"/>
+                <outlet property="buttonShowProducts" destination="QHp-d6-ND2" id="Gbr-7C-DJA"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4J-Zp-Frx">
+                    <rect key="frame" x="20" y="100" width="280" height="219"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="219" id="iYe-rC-sS3"/>
+                    </constraints>
+                    <state key="normal" title="Create Products"/>
+                    <connections>
+                        <action selector="touchCreateProducts:" destination="-1" eventType="touchUpInside" id="RF0-qR-QbA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHp-d6-ND2">
+                    <rect key="frame" x="20" y="327" width="280" height="221"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="221" id="t6j-B1-YzJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Show Products"/>
+                    <connections>
+                        <action selector="touchShowProducts:" destination="-1" eventType="touchUpInside" id="2Qr-t8-n9l"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="J4J-Zp-Frx" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="BqX-Qg-eMI"/>
+                <constraint firstAttribute="trailing" secondItem="J4J-Zp-Frx" secondAttribute="trailing" constant="20" symbolic="YES" id="Dbv-gX-rol"/>
+                <constraint firstItem="QHp-d6-ND2" firstAttribute="top" secondItem="J4J-Zp-Frx" secondAttribute="bottom" constant="8" symbolic="YES" id="QAV-mR-NMH"/>
+                <constraint firstAttribute="bottom" secondItem="QHp-d6-ND2" secondAttribute="bottom" constant="20" symbolic="YES" id="UIv-Jr-q0R"/>
+                <constraint firstItem="J4J-Zp-Frx" firstAttribute="trailing" secondItem="QHp-d6-ND2" secondAttribute="trailing" id="tO6-hG-qnD"/>
+                <constraint firstItem="QHp-d6-ND2" firstAttribute="leading" secondItem="J4J-Zp-Frx" secondAttribute="leading" id="wPE-d6-WX3"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

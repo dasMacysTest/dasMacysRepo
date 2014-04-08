@@ -1,0 +1,84 @@
+{
+    "products":[
+                {
+                "productId":0,
+                "productName":"18K White Gold 2mm Comfort Fit Ring",
+                "productDescription":"This classic 2mm four-prong setting has a rounded inside edge for increased comfort.",
+                "productPrice":49500,
+                "productSalePrice":44500,
+                "productPhotoName":"BE101",
+                "productColors":[
+                                 {
+                                 "red":1.0,
+                                 "green":0.25,
+                                 "blue":1.0
+                                 },
+                                 {
+                                 "red":0.25,
+                                 "green":1.0,
+                                 "blue":1.0
+                                 }
+                                 ]
+                },
+                {
+                "productId":5,
+                "productName":"18K White Gold Flower Bud Ring",
+                "productDescription":"This nature inspired ring is adorned with an engraved pattern of flower buds and stems with diamond accents. Two surprise diamonds in the profile make this ring even more romantic.",
+                "productPrice":97500,
+                "productSalePrice":89500,
+                "productPhotoName":"BE1N4",
+                "productColors":[
+                                 {
+                                 "red":1.0,
+                                 "green":0.25,
+                                 "blue":0.22
+                                 },
+                                 {
+                                 "red":0.25,
+                                 "green":1.0,
+                                 "blue":0.0
+                                 }
+                                 ]
+                },
+                {
+                "productId":2,
+                "productName":"14K Rose Gold Adorned Trio Diamond Ring",
+                "productDescription":"This ornate ring features a brilliant cluster of three diamonds framing each side of the center gem. The band features intricate scrolling detail (0.20 total carat weight).",
+                "productPrice":127500,
+                "productSalePrice":99900,
+                "productPhotoName":"BE149PCD18R6",
+                "productColors":[
+                                 {
+                                 "red":1.0,
+                                 "green":0.25,
+                                 "blue":0.22
+                                 },
+                                 {
+                                 "red":0.25,
+                                 "green":1.0,
+                                 "blue":0.0
+                                 }
+                                 ]
+                },
+                {
+                "productId":1,
+                "productName":"18K White Gold Lotus Flower Diamond Ring",
+                "productDescription":"The subtle floral diamond halo blooms around the center gem in this exquisite ring. Number of diamonds and carat weight increases depending on size of center gem (ranges from 1/5 to 1/3 total carat weight).",
+                "productPrice":144999,
+                "productSalePrice":134999,
+                "productPhotoName":"BE1BD12R2",
+                "productColors":[
+                                 {
+                                 "red":1.0,
+                                 "green":0.25,
+                                 "blue":0.22
+                                 },
+                                 {
+                                 "red":0.25,
+                                 "green":1.0,
+                                 "blue":0.0
+                                 }
+                                 ]
+                }
+                ]
+}

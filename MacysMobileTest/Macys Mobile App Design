@@ -1,0 +1,22 @@
+Design Decisions
+
+MCSProductStore
+In a larger application I'd consider creating this using a singleton pattern. However, due to the limited size of the application it's simple enough to create an instance in the application delegate and pass it down to the necessary view controllers.
+
+MCSProductStore depends on the MCSDatabaseProperty item for easy creation of queries and moving between query results and core foundation objects. By creating an array of MCSDatabaseProperty items that match property names of the represented object we create a single place in code to list properties needed for a table (the initializer of MCSProductStore). Otherwise we'd have to find every place in code that table is referenced every time a property is added, removed, or changed.
+
+MCSProductStore could be much further generalized but doing so is not necessary in such a small application. (Make it custom the first time. The second time you need it generalize your first implementation.)
+
+Just about everything else here is done for speed over re-usability.
+
+MCSProductViewControllerInterface Protocol
+Creating this protocol allows all view controllers to share an init function and have an MCSProductStore property built in without the need to inherit from a single class (some inherit from UIViewController and others from UITableViewController).
+
+Product Colors are Not Editable
+This was not implemented due to the desired time constraints expressed by the recruiter.
+
+Store Dictionary Not Implemented
+Also unimplemented due to the desired time constraints expressed by the recruiter. Additionally, the desired functionality was unclear. (Assuming a dictionary paring physical retail locations with an inventory count?) The data setup for this would look almost identical to how colors are stored: A new table with 3 columns, "productId", "storeId", and "inventoryCount," none of which would be unique. 
+
+Views & ViewControllers
+These are all "by the book" when it comes to iOS view & interface programming. 
